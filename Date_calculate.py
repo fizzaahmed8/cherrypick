@@ -34,7 +34,7 @@ def date_add_sort(TotalList,date):
     return TotalList
     
 if __name__=='__main__':
-    user_data = pd.read_csv("D:\\Desktop\\Material\\STAT 154\\Kaggle\\ShrinkedData\\yelp_academic_dataset_review_train.csv")
+    user_data = pd.read_csv("D:\\Desktop\\Material\\STAT 154\\Kaggle\\ShrinkedData\\cherrypick_academic_dataset_review_train.csv")
     datee = user_data.loc[[1]].date.values[0]
     datee2 = user_data.loc[[2]].date.values[0]
     datee3 = user_data.loc[[3]].date.values[0]
