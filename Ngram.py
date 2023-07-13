@@ -20,7 +20,7 @@ def function():
 
 if __name__=='__main__':
     import pandas as pd
-    user_data = pd.read_csv("D:\\Desktop\\Material\\STAT 154\\Kaggle\\ShrinkedData\\yelp_academic_dataset_review_train.csv")
+    user_data = pd.read_csv("D:\\Desktop\\Material\\STAT 154\\Kaggle\\ShrinkedData\\cherrypick_academic_dataset_review_train.csv")
     load_num = 200
     str_sample = ""
     for i in range(0,load_num):
