@@ -19,7 +19,7 @@ from sklearn import neural_network
 from sklearn import decomposition
 
 from data_SVM import SVM
-user_data = pd.read_csv("./data/yelp_academic_dataset_review_train.csv")
+user_data = pd.read_csv("./data/cherrypick_academic_dataset_review_train.csv")
 
 # load the data
 load_num = 1000
