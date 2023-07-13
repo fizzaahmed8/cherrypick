@@ -18,7 +18,7 @@ def sentence_pos(sentence, mode):
     return wordlist, upper_word
         
 def cleanText(input_text, upper_list,mode):
-    #input = bytes(input.encode('utf-8')) # 把内容转换成utf-8格式以消除转义字符
+    #input = bytes(input.encode('utf-8')) 
     if mode == 'revised':
         punctuation_reduced = string.punctuation[1:20] + string.punctuation[21:]
     if mode == 'normal':
@@ -33,13 +33,13 @@ def cleanText(input_text, upper_list,mode):
 #        if mode == "upper2lower":
 #            #print(i,item)
 #            sequence.insert(i,item)
-    input_text = re.sub('\n+'," ",input_text).lower() # 匹配换行,用空格替换换行符
-    input_text = re.sub('\[[0-9]*\]', "", input_text) # 剔除类似[1]这样的引用标记
-    input_text = re.sub(' +', " ", input_text) #  把连续多个空格替换成一个空格
+    input_text = re.sub('\n+'," ",input_text).lower() 
+    input_text = re.sub('\[[0-9]*\]', "", input_text) 
+    input_text = re.sub(' +', " ", input_text)
     adj_list = []
     adj_str = ""
     input_text, word_freq, word_list = pos_neg(input_text, adj_list, adj_str, punctuation_reduced)
-    #input = bytes(input)#.encode('utf-8') # 把内容转换成utf-8格式以消除转义字符
+    #input = bytes(input)#.encode('utf-8') 
     #input = input.decode("ascii", "ignore")
     return input_text, upper_list, word_list
     
